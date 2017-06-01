@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<p>Conditional Test</p>
+<form>
+<input type="number" id="input1"/>
+
+
+</form>
+<div><button id="button1">Test !</button></div>
+<div id="demo"></div>
+
+<script>
+    function cardinality() {
+        var num = parseInt(document.getElementById('input1').value);
+        var output = "";
+        if (num<0) {
+            output = "negative";
+        } else if (num<10) {
+            output = "less than 10";
+        } else {
+            output = "ten or more";
+        }
+        document.getElementById('demo').innerHTML=output;
+    }
+    
+    
+    button = document.getElementById('button1');
+    button.addEventListener('click', cardinality);
+</script>
+
+</body>
+</html>

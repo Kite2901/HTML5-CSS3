@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<form>
+<input type="text" id="input1"/>
+</form>
+<div><button id="button1">Button</button></div>
+<div id="demo"></div>
+
+<script>
+    function echoes() {
+        var val = document.getElementById("input1").value;
+        document.getElementById("demo").innerHTML=val;
+    }
+    button = document.getElementById("button1");
+    button.addEventListener('click', echoes, false);
+</script>
+</body>
+</html>

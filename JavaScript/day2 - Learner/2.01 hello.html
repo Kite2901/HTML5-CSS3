@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Hello World</p>
+<p id="demo"></p>
+    <input id="input">
+    <button id="echo">Echo</button>
+<script>
+    function func() {
+        words = document.getElementById('input').value;
+        alert(words);
+    }
+    
+    button = document.getElementById("echo");
+    button.addEventListener('click', func);
+</script>
+</body>
+</html>
